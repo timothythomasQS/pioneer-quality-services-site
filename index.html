@@ -213,6 +213,103 @@
       .brand{ font-size: 34px; }
       .masthead{ padding-top: 18px; }
     }
+    /* ===== Spacing & breathability pass (no content changes) ===== */
+
+:root{
+  --space-1: 8px;
+  --space-2: 12px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+  --space-6: 48px;
+}
+
+/* Global vertical rhythm */
+body{
+  line-height: 1.75;
+}
+
+/* Masthead + layout air */
+.masthead{
+  padding: 32px 0 20px;
+}
+
+.grid{
+  gap: 56px;
+  padding: 20px 0;
+}
+
+/* Headings and paragraphs */
+.kicker{
+  margin-bottom: var(--space-2);
+}
+
+.headline{
+  margin-bottom: var(--space-3);
+}
+
+.lede{
+  margin-bottom: var(--space-4);
+}
+
+/* Space between major sections */
+section > .kicker{
+  margin-top: var(--space-5);
+}
+
+/* Pillar cards */
+.two-col{
+  margin-top: var(--space-4);
+  gap: var(--space-4);
+}
+
+.info-card{
+  padding: 20px 18px;
+  border-radius: 10px;
+}
+
+.info-card .label{
+  margin-bottom: var(--space-2);
+}
+
+.info-card .value{
+  line-height: 1.55;
+}
+
+/* Callout breathing room */
+.callout{
+  margin-top: var(--space-5);
+  padding: 20px 20px;
+}
+
+.callout .small{
+  margin-top: var(--space-2);
+}
+
+/* Sidebar spacing */
+.sidebar h2,
+.sidebar h3{
+  margin-bottom: var(--space-2);
+}
+
+.sidebar ul{
+  margin-bottom: var(--space-4);
+}
+
+.sidebar .rule.thin{
+  margin: var(--space-5) 0;
+}
+
+/* Rules spacing */
+.rule.thin{
+  margin: var(--space-4) 0;
+}
+
+/* Footer spacing */
+footer{
+  padding: var(--space-4) 0 var(--space-6);
+}
+
   </style>
 </head>
 
