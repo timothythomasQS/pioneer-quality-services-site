@@ -309,6 +309,100 @@ section > .kicker{
 footer{
   padding: var(--space-4) 0 var(--space-6);
 }
+/* ===== Article-style separation & additional breathability ===== */
+
+/* Overall layout rhythm */
+.grid{
+  padding: 36px 0;
+  gap: 72px;
+}
+
+/* Make paragraphs read like an article */
+.lede{
+  max-width: 62ch;
+}
+
+/* Stronger section separation for kickers */
+.kicker{
+  font-size: 12px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--muted);
+
+  border-top: 1px solid var(--rule);
+  padding-top: 16px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+/* Do not add divider before first section */
+section .kicker:first-of-type{
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Headline hierarchy */
+.headline{
+  font-size: 34px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+/* Rules feel more intentional */
+.rule.thin{
+  margin: 40px 0;
+}
+
+/* Pillar cards spacing */
+.two-col{
+  margin-top: 32px;
+  gap: 24px;
+}
+
+.info-card{
+  padding: 24px 22px;
+  border-radius: 12px;
+}
+
+.info-card .label{
+  font-size: 11px;
+  letter-spacing: .16em;
+  margin-bottom: 12px;
+}
+
+/* Callout spacing */
+.callout{
+  margin-top: 40px;
+  padding: 26px 24px;
+}
+
+/* Sidebar section headers */
+.sidebar h2{
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+
+  margin: 0 0 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--rule);
+}
+
+/* First sidebar header shouldn’t have divider */
+.sidebar h2:first-of-type{
+  border-top: none;
+  padding-top: 0;
+}
+
+/* Sidebar lists breathe more */
+.sidebar ul{
+  margin: 0 0 28px;
+}
+
+.sidebar li{
+  margin: 8px 0;
+}
 
   </style>
 </head>
